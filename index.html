@@ -1,23 +1,12 @@
 <html>
     <head>
         <title>Teste GitPages</title>
-
-        <script>
-            const xhr = new XMLHttpRequest();
-                xhr.open('GET', 'https://graph.facebook.com/v3.0/freeCodeCampLisbon/events');
-                xhr.setRequestHeader('Authorization', 'Bearer EAAUOkpBroAwBAKaUQJ8TGjZBJZBVAce7dPkB9GwMmHgksdVob3ZBZCX28eFAkGd1mbkApc3VF0SEQu655mNesbc2MqWaLZA4BhTwNbmyDcRKFAzswTlqrpoY4WHRTpxcttAMPlpavah4MaZAFIgqWMZBAZC4GesPn2MZD');
-                xhr.send();
-
-            xhr.onload = function(e){
-                let valuesRequest = JSON.parse(xhr.response);
-                console.log(valuesRequest.data);
-            }
-
-            
-
-        </script>
+        <script src="https://zer0586.github.io/MyResume/events.js"></script>
     </head>
     <body>
         <h1>Teste GitPages</h1>
+
+        <div id="eventList">
+        </div>
     </body>
 </html>

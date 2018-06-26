@@ -9,9 +9,11 @@
                 xhr.send();
 
             xhr.onload = function(e){
-                let valuesRequest = xhr.response;
-                console.log(valuesRequest);
+                let valuesRequest = JSON.parse(xhr.response);
+                console.log(valuesRequest.data);
             }
+
+            
 
         </script>
     </head>

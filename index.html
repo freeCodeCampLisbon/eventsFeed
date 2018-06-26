@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Teste GitPages</title>
+
+        <script>
+            const xhr = new XMLHttpRequest();
+                xhr.open('GET', 'https://graph.facebook.com/v3.0/freeCodeCampLisbon/events');
+                xhr.setRequestHeader('Authorization', 'Bearer EAAUOkpBroAwBAKaUQJ8TGjZBJZBVAce7dPkB9GwMmHgksdVob3ZBZCX28eFAkGd1mbkApc3VF0SEQu655mNesbc2MqWaLZA4BhTwNbmyDcRKFAzswTlqrpoY4WHRTpxcttAMPlpavah4MaZAFIgqWMZBAZC4GesPn2MZD');
+                xhr.send();
+
+            xhr.onload = function(e){
+                let values = JSON.parse(xhr.response);
+                console.log(values);
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1>Teste GitPages</h1>
+    </body>
+</html>
